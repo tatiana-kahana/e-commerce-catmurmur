@@ -7,7 +7,7 @@ The project was created using the following technologies:
  - Database - MongoDB
  - Frontend - ReactJS with React hooks
  - Backend/API - NodeJS, Express
- -Style - Bootstrap
+ - Style - Bootstrap
 
 ## Features
 
