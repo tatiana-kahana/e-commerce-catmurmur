@@ -53,7 +53,7 @@ const Card = ({
                     onClick={addToCart}
                     className="btn btn-warning mt-2 mb-2" >
                     Add to card
-        </button >
+                </button >
             )
         );
     };
@@ -68,7 +68,7 @@ const Card = ({
                     }}
                     className="btn btn-danger mt-2 mb-2" >
                     Remove Product
-        </button >
+                </button >
             )
         );
     };

@@ -38,7 +38,7 @@ const Product = (props) => {
             title={product && product.name}
             className="container-fluid product">
             <div className="row">
-                <div className="col-8">
+                <div className="col-12 col-lg-8">
                     {
                         product &&
                         product.description &&
@@ -47,7 +47,7 @@ const Product = (props) => {
                     }
                 </div>
 
-                <div className="col-4">
+                <div className="col-12 col-lg-4">
                     <h4>Related Products</h4>
                     {relatedProduct.map((p, i) => (
                         <div className="mb-3">

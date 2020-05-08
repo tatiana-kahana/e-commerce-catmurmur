@@ -98,7 +98,7 @@ const Shop = () => {
     return (
         <Layout title='Cat Shop' description='Miau!' className="container-fluid shop">
             <div className="row">
-                <div className="col-2">
+                <div className="col-12 col-md-3 col-lg-2">
                     <h6>Filter by categories:</h6>
                     <ul>
                         <Checkbox categories={categories} handleFilters={filters =>
@@ -116,12 +116,12 @@ const Shop = () => {
                     </div>
                 </div>
 
-                <div className="col-10">
+                <div className="col-12 col-md-9 col-lg-10">
                     <h4 className="mb-4">Products:</h4>
                     <div className="row">
                         {/* {JSON.stringify(filteredResults)} */}
                         {filteredResults.map((product, i) => (
-                            <div key={i} className="col-4 mb-3">
+                            <div key={i} className="col-12 col-md-6 col-lg-4 mb-3">
                                 <Card product={product} />
                             </div>
                         ))}

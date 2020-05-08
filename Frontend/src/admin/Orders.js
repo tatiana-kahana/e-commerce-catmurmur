@@ -80,15 +80,15 @@ const Orders = () => {
     );
 
     return (
-        <Layout title="Orders" description={`Hello ${user.name},manage your orders here`}>
+        <Layout className="container-fluid" title="Orders" description={`Hello ${user.name},manage your orders here`}>
             <div className="row">
-                <div className='col-md-8 offset-md-2'>
+                <div className='col-12 col-md-8 offset-md-2'>
                     {showOrdersLength(orders)}
                     {orders.map((o, oi) => {
                         return (<div className="mt-5" key={oi} style={{ borderBottom: "5px solid blue" }}>
-                            <h2 className="mb-5">
-                                <span>Order ID:{o._id}</span>
-                            </h2>
+                            <p className="lead mb-3">
+                                Order ID:{o._id}
+                            </p>
                             <ul className="list-group mb-2">
 
                                 <li className="list-group-item">

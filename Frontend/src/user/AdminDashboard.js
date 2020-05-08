@@ -53,11 +53,11 @@ const AdminDashboard = () => {
     return (
         <Layout title="Dashboard" description={`Hello ${name}`} className="container-fluid">
             <div className="row">
-                <div className='col-3'>
+                <div className='col-12 col-md-5 col-lg-3'>
                     {adminLinks()}
                 </div>
 
-                <div className='col-9'>
+                <div className='col-12 col-md-7 col-lg-9 mt-5 mt-md-0'>
                     {adminInfo()}
                 </div>
             </div>

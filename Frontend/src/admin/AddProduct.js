@@ -148,9 +148,9 @@ const AddProduct = () => {
 
 
     return (
-        <Layout title="Add a new product" description={`Hello ${user.name},ready to create a new product?`}>
+        <Layout className="container-fluid" title="Add a new product" description={`Hello ${user.name},ready to create a new product?`}>
             <div className="row">
-                <div className='col-md-8 offset-md-2'>
+                <div className='col-12 col-md-8 offset-md-2'>
                     {showLoading()}
                     {showSuccess()}
                     {showError()}

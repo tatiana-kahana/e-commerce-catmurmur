@@ -41,7 +41,7 @@ const ManageProducts = () => {
             className="container"
         >
             <div className="row justify-content-center">
-                <div className="col-7">
+                <div className="col-12 col-lg-7">
                     <h2 className="text-center">
                         Total: {products.length} products
                     </h2>
