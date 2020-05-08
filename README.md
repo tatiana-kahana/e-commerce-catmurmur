@@ -1,16 +1,18 @@
 # 🛒 E-Commerce final project of Full Stack course.
+You can view the project website in the following address: [https://catmurmur.com/](https://catmurmur.com/)
 
 👩‍🎓 This is a the final project for the Technion's FullStack course.
 
 ## Details
 The project was created using the following technologies:
  - Database - MongoDB
- - Frontend - React with React hooks
+ - Frontend - ReactJS with React hooks
  - Backend/API - NodeJS, Express
+ - Style - Bootstrap
 
 ## Features
 
-You can view the project website in the following address: [https://catmurmur.com/](https://catmurmur.com/)
+
 
 User panel: [https://catmurmur.com/user/dashboard](https://catmurmur.com/user/dashboard)
 |Username|Password|
