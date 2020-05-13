@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import ShowImage from './ShowImage';
 import moment from 'moment';
+import InputNumber from 'react-input-number';
 import { addItem, updateItem, removeItem } from './cartHelpers';
 
 
@@ -66,7 +67,7 @@ const Card = ({
                     }}
                     className="btn btn-outline-danger mt-2 mb-2" >
                     Remove Product
-                    </button >
+                </button >
             ));
     };
 
@@ -80,9 +81,9 @@ const Card = ({
     };
     const handleChange = productId => event => {
         setRun(!run); // run useEffect in parent Cart
-        setCount(event.target.value < 1 ? 1 : event.target.value);
-        if (event.target.value >= 1) {
-            updateItem(productId, event.target.value);
+        setCount(event < 1 ? 1 : event);
+        if (event >= 1) {
+            updateItem(productId, event);
         };
     };
 
@@ -93,9 +94,11 @@ const Card = ({
                     <div className="input-group-prepend">
                         <span className="input-group-text">Adjust Quantity</span>
                     </div>
-                    <input
-                        type="number"
+                    <InputNumber
+                        enableMobileNumericKeyboard
                         className="form-control"
+                        min={1}
+                        step={1}
                         value={count}
                         onChange={handleChange(product._id)} />
                 </div>
