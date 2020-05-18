@@ -1,5 +1,5 @@
 # 🛒 E-Commerce final project of Full Stack course.
-You can view the project website in the following address: [https://catmurmur.com/](https://catmurmur.com/)
+You can view the project website in the following address: [https://catmurmur.com/](https://catmurmur.com)
 
 👩‍🎓 This is a the final project for the Technion's FullStack course.
 
